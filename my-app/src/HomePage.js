@@ -4,7 +4,16 @@ import React from 'react';
 export const HomePage = () => {
     return (
       <main>
-        Home!
+        Welcome to enlivenn, the Study/Social Event App for students!
+        Points of differentiation: 
+<div>Having events all in one place
+
+<div>Choosing tags:
+Is this a study event/club event
+Quiet loud
+How many people does the room booking allow
+What topic is this study for
+!</div></div>
       </main>
     )
 }

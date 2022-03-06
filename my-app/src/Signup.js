@@ -3,6 +3,7 @@ import { Form, Button, Card, Alert } from "react-bootstrap"
 import {useNavigate} from 'react-router-dom';
 import { useAuth } from './contexts/AuthContext';
 import { ExampleUser } from './ExampleUser';
+import logo from './images/logo.jpg'
 
 export default function Signup() {
     let nav = useNavigate();
@@ -39,6 +40,7 @@ export default function Signup() {
     <>
         <Card>
             <Card.Body>
+            <a><img src={logo} className={"nav_logo1"}/></a>
                 <h2 className="text-center mb-4">Sign Up</h2>
                 <Form>
                     <Form.Group id="email">

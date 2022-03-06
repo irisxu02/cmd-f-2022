@@ -1,6 +1,7 @@
 import React from 'react';
 import TopNav from './TopNav'
 import { useCallback, useState } from "react";
+
 import { ThemeProvider } from '@ui5/webcomponents-react';
 import { List, StandardListItem, ListMode, Text, Toolbar, Title, TitleLevel, ToolbarSpacer, Select, Option } from '@ui5/webcomponents-react';
 
@@ -12,28 +13,28 @@ export function Events() {
             "Category": "Study",
             "When": "Monday March 7, 2022",
             "Where": "Koerner Library",
-            "EventPicUrl": "images/math.png",
+            "EventPicUrl": "./images/math.png",
         },
         {
             "EventName": "Block Party",
             "Category": "Social",
             "When": "Tuesday March 8, 2022",
             "Where": "AMS Nest",
-            "EventPicUrl": "images/math.png",
+            "EventPicUrl": "./images/math.png",
         },
         {
             "EventName": "Jazz Night",
             "Category": "Clubs and Societies",
             "When": "Wednesday March 9, 2022",
             "Where": "AMS Nest",
-            "EventPicUrl": "images/math.png",
+            "EventPicUrl": "./images/math.png",
         },
         {
             "EventName": "Science Student Research Conference",
             "Category": "Special Events",
             "When": "Wednesday March 10, 2022",
             "Where": "West Mall Swing",
-            "EventPicUrl": "images/math.png",
+            "EventPicUrl": "./images/math.png",
         }
     ]
     const [selectedMode, setSelectedMode] = useState(ListMode.None);
@@ -43,7 +44,7 @@ export function Events() {
 
     return (
         <main>
-            <TopNav />
+
         <ThemeProvider>
             <div className="EventsTable">
                 <List title={"Events"} mode={selectedMode}
@@ -61,7 +62,7 @@ export function Events() {
                           </Toolbar>
                       }>
                     {sampleData.map((product)=>(
-                        <StandardListItem description={product.When + " @ " + product.Where} image={product.EventPicUrl}
+                        <StandardListItem description={product.When + " @ " + product.Where} icon={product.EventPicUrl}
                                           style={{ textAlign: 'left' }}>
                             <Text>{product.EventName}</Text>
                         </StandardListItem>

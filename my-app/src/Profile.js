@@ -8,14 +8,7 @@ export const Profile = () => {
     let nav = useNavigate();
     return (
         <main>
-            <button
-                onClick={() => {
-                    nav("/Events");
-                }} 
-            >
-                {" "}
-                Join Events
-            </button>
+            
             <AuthProvider>
                 <Container 
                 className="d-flex align-center justify-content-center"
@@ -27,7 +20,7 @@ export const Profile = () => {
                 </Container>
             </AuthProvider>
             
-            
+
             
         </main>
     )
