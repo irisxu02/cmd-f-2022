@@ -14,3 +14,18 @@ Meeting new people and being involved is central to students' university experie
 
 ## Highlights
 - Our logo is a Venn diagram, signifying commonality and connection in the student community
+
+## How we built it
+Using React.js, SAP UI5 Web Components, Firebase
+
+## Challenges we ran into
+We have little experience with Javascript, so figuring out how to organize our directory and write the actual code took lots of time and patience.
+
+## Accomplishments that we're proud of
+Submitting this project to cmd-f 2022 Hackathon!
+
+## What we learned
+Basic Javascript
+
+## What's next for Enlivenn
+We want more of our features to be functional and improve our UX/UI design.
