@@ -1,34 +1,15 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import "./App.css"
+import logo from './logo.jpg'
 
 const TopNav = () => {
     return (
-        <div>
-            <NavLink
-                to="/"
-                style={isActive => ({
-                    color: isActive ? "green" : "blue"
-                })}
-            >
-                Muster
-            </NavLink>
-            <NavLink
-                to="/Profile"
-                style={isActive => ({
-                    color: isActive ? "green" : "blue"
-                })}
-            >
-                Profile
-            </NavLink>
-            <NavLink
-                to="/Events"
-                style={isActive => ({
-                    color: isActive ? "green" : "blue"
-                })}
-            >
-                Event
-            </NavLink>
+        <div class={"topnav"}>
+            <a><img src={logo} class={"nav_logo"}/></a>
+            <a><NavLink to="/">Home</NavLink></a>
+            <a><NavLink to="/Profile">Profile</NavLink></a>
+            <a><NavLink to="/Events">Event</NavLink></a>
         </div>
     )
 }

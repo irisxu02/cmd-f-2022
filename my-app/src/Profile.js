@@ -1,7 +1,11 @@
 import React from 'react';
+import TopNav from './TopNav'
 
 export const Profile = () => {
     return (
-        <header>Profile</header>
+        <main>
+            <TopNav/>
+
+        </main>
     )
 }
