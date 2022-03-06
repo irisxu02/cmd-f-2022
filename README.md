@@ -1,5 +1,5 @@
 # Enlivenn: A Study/Social Event App for Students
-24h Hackathon Project
+24h Hackathon Project by Anna, Christie, Iris, Jenn
 
 ## The Idea
 Meeting new people and being involved is central to students' university experience. This web application aims to build a stronger community by making it easy for students to get involved at UBC, whether through joining small study sessions with classmates, networking at social events, or taking up a new hobby with a club. We want this to be a "one-stop-shop" for all the events happening on campus so students will always be in the loop for exciting activities!
