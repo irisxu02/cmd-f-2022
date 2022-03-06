@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import "./App.css"
-import logo from './logo.jpg'
+import logo from './images/logo.jpg'
 
 const TopNav = () => {
     return (
@@ -9,7 +9,7 @@ const TopNav = () => {
             <a><img src={logo} class={"nav_logo"}/></a>
             <a><NavLink to="/">Home</NavLink></a>
             <a><NavLink to="/Profile">Profile</NavLink></a>
-            <a><NavLink to="/Events">Event</NavLink></a>
+            <a><NavLink to="/Events">Events</NavLink></a>
         </div>
     )
 }

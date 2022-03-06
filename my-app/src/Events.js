@@ -1,32 +1,38 @@
 import React from 'react';
 import TopNav from './TopNav'
 import { useCallback, useState } from "react";
-import { ThemeProvider } from '@ui5/webcomponents-react/lib/ThemeProvider';
+import { ThemeProvider } from '@ui5/webcomponents-react';
 import { List, StandardListItem, ListMode, Text, Toolbar, Title, TitleLevel, ToolbarSpacer, Select, Option } from '@ui5/webcomponents-react';
 
 
-function Community() {
+export function Events() {
     const sampleData = [
         {
             "EventName": "Lisa's Math 100 Study Session",
+            "Category": "Study",
             "When": "Monday March 7, 2022",
             "Where": "Koerner Library",
             "EventPicUrl": "images/math.png",
         },
         {
-            "EventName": "HT-1001",
-            "When": "Notebook Basic 17",
+            "EventName": "Block Party",
+            "Category": "Social",
+            "When": "Tuesday March 8, 2022",
+            "Where": "AMS Nest",
             "EventPicUrl": "images/math.png",
         },
         {
-            "EventName": "HT-1002",
-            "When": "Notebook Basic 18",
+            "EventName": "Jazz Night",
+            "Category": "Clubs and Societies",
+            "When": "Wednesday March 9, 2022",
+            "Where": "AMS Nest",
             "EventPicUrl": "images/math.png",
         },
         {
-            "EventName": "HT-1003",
-            "Category": "Laptops",
-            "When": "Notebook Basic 19",
+            "EventName": "Science Student Research Conference",
+            "Category": "Special Events",
+            "When": "Wednesday March 10, 2022",
+            "Where": "West Mall Swing",
             "EventPicUrl": "images/math.png",
         }
     ]
@@ -55,9 +61,9 @@ function Community() {
                           </Toolbar>
                       }>
                     {sampleData.map((product)=>(
-                        <StandardListItem description={product.EventName} image={product.EventPicUrl}
+                        <StandardListItem description={product.When + " @ " + product.Where} image={product.EventPicUrl}
                                           style={{ textAlign: 'left' }}>
-                            <Text>{product.Name}</Text>
+                            <Text>{product.EventName}</Text>
                         </StandardListItem>
                     ))}
                 </List>
@@ -67,4 +73,4 @@ function Community() {
     );
 }
 
-export default Community;
+export const Event = true;

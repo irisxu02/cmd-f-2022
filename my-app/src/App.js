@@ -11,9 +11,8 @@ import {
 import React from 'react';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import {HomePage} from "./HomePage";
-import {Events} from "./Event";
+import {Events} from "./Events";
 import {Profile} from "./Profile"
-
 import './App.css';
 
 function App() {
