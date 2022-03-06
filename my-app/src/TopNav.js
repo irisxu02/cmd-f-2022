@@ -5,11 +5,11 @@ import logo from './images/logo.jpg'
 
 const TopNav = () => {
     return (
-        <div class={"topnav"}>
-            <a><img src={logo} class={"nav_logo"}/></a>
-            <a><NavLink to="/">Home</NavLink></a>
-            <a><NavLink to="/Profile">Profile</NavLink></a>
-            <a><NavLink to="/Events">Events</NavLink></a>
+        <div className={"topnav"}>
+            <a><img src={logo} className={"nav_logo"}/></a>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/Profile">Profile</NavLink>
+            <NavLink to="/Events">Events</NavLink>
         </div>
     )
 }
